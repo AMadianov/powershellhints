@@ -11,7 +11,7 @@ if ($AllUsers.Count -eq 0) {
     $usrL = Read-Host 'What is loginname?'
     $usrE = Read-Host 'What is E-mail?'
     if ($AllUsers[$usrL]) {
-        write "this is user"
+        write "this login is already there"
     } else {
         $AllUsers.Add($usrL, $usrE)
     }
